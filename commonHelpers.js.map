@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":["../src/js/script.js"],"sourcesContent":["console.log('hello');\n"],"names":[],"mappings":"ssBAAA,QAAQ,IAAI,OAAO"}
+{"version":3,"file":"commonHelpers.js","sources":["../src/js/script.js"],"sourcesContent":["const form = document.querySelector('.search-js');\nconsole.dir(form);\n"],"names":["form"],"mappings":"ssBAAA,MAAMA,EAAO,SAAS,cAAc,YAAY,EAChD,QAAQ,IAAIA,CAAI"}
