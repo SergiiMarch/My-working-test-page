@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/api.js"></script>
+    <script type="module" src="./js/markup.js"></script>
   </head>
   <body>
     <load ="partials/header.html" />
-    <form class="search search-js" action="text">
-      <input type="text" placeholder="Search..." name="query" />
-      <button type="submit">Search</button>
+    <form class="form-inline search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" name="query" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Search</button>
     </form>
 
-    <div class="random-js"></div>
+    <div class="card-container"></div>
 
-    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
