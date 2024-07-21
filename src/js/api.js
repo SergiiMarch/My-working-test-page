@@ -79,3 +79,48 @@ function renderMareupNews({ author, title, url }) {}
 function onFetchError(err) {
   alert('Упс, щось пішло не так');
 }
+
+function checkStorage(available, ordered) {
+  let message = '';
+  if (ordered === 0) {
+    message = 'There are no products in the order!';
+  } else if (ordered > available) {
+    message = 'There are no products in the order!';
+  } else {
+    message = 'The order is accepted, our manager will contact you';
+  }
+  return message;
+}
+
+console.log(checkStorage(4, 6));
+
+function checkPassword(password) {
+  const correctPassword = 'jqueryismyjam';
+  const result =
+    password === correctPassword
+      ? 'Access granted'
+      : 'Access denied, wrong password!';
+  return result;
+}
+
+function getSubscriptionPrice(type) {
+  switch (type) {
+    case 'starter':
+      return 0;
+    case 'professional':
+      return 20;
+    case 'organization':
+      return 50;
+    default:
+      return 'Invalid subscription type!';
+  }
+}
+getSubscriptionPrice('organization');
+getSubscriptionPrice('starter');
+
+let count = 0;
+
+while (count < 110) {
+  console.log(`Count: ${count}`);
+  count += 1;
+}
